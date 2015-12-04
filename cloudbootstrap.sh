@@ -1,4 +1,6 @@
 #!/bin/bash
+#Oneliner:
+#bash <(curl https://raw.githubusercontent.com/jmamma/jconfig/master/cloudbootstrap.sh)
 
 #Package Install
 sudo apt-get update
