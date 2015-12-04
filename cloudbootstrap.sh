@@ -4,10 +4,11 @@
 
 #Package Install
 sudo apt-get update
-sudo apt-get install vim git
+sudo apt-get -y install vim git puppet
 
 cd ~
-git clone git@github.com:jmamma/jconfig.git
+git clone https://github.com/jmamma/jconfig.git
 
 #Config VIM
-ln -s ~/jconfig/.vimrc ~/vimrc
+ln -s ~/jconfig/.vimrc ~/.vimrc
+
