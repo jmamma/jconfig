@@ -135,7 +135,7 @@ inoremap <C-x> <ESC>:q!<CR>
 "noremap <C-u> <ESC>:let @q=@q[1:]<CR>h"qp:let @q=""<CR>i
 
 noremap <C-u> :call SwitchReg(copy)<CR><ESC>"n[p<CR>:let @n=""<CR>i
-inoremap <C-u> <ESC>:call SwitchReg(copy)<CR><ESC>"n[p<CR>:let @n=""<CR>i
+inoremap <C-u> <ESC>:set paste<CR><ESC>:call SwitchReg(copy)<CR><ESC>"n[p<CR>:let @n=""<CR><ESC>:set nopaste<CR>i
 vnoremap <C-u> <ESC>:call SwitchReg(copy)<CR><ESC>"n[p<CR>:let @n=""<CR>i
 
 "inoremap <C-u> <ESC>:call SwitchReg(copy)<CR>"n[p<CR>i
